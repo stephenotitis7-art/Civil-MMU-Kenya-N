@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CivilConnect Kenya</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+.hero{
+    background:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    display:inline-block;
+    border-radius:5px;
+    margin:10px;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+section{
+    padding:40px;
+}
+
+.section-title{
+    text-align:center;
+    color:#003366;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    margin:15px auto;
+    padding:20px;
+    border-radius:10px;
+    max-width:800px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#003366;
+}
+
+.card p{
+    margin:8px 0;
+}
+
+.card button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#00509e;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CivilConnect Kenya</h1>
+    <p>Connecting Engineers With Contractors</p>
+
+    <nav>
+        <a href="#jobs">Jobs</a>
+        <a href="#engineers">Engineers</a>
+        <a href="#contractors">Contractors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Find Civil Engineering Jobs and Contracts</h2>
+
+    <p>
+        A platform where engineers can showcase their skills
+        and contractors can hire qualified professionals.
+    </p>
+
+    <a class="btn" href="post-job.html">Post a Job</a>
+    <a class="btn" href="create-profile.html">Create Profile</a>
+	<button onclick="window.location.href='jobs.html'"> View All Jobs</button>
+</section>
+
+<section id="jobs">
+
+    <h2 class="section-title">Available Jobs</h2>
+
+    <div class="card">
+        <h3>Site Engineer</h3>
+        <p><strong>Company:</strong> ABC Contractors Ltd</p>
+        <p><strong>Location:</strong> Nairobi</p>
+        <p><strong>Salary:</strong> Negotiable</p>
+
+        <button onclick="location.href='apply-site-engineer.html'">
+            Apply
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>Highway Design Engineer</h3>
+        <p><strong>Company:</strong> RoadTech Ltd</p>
+        <p><strong>Location:</strong> Nakuru</p>
+        <p><strong>Salary:</strong> Negotiable</p>
+
+        <button onclick="location.href='apply-highway-engineer.html'">
+            Apply
+        </button>
+    </div>
+
+</section>
+
+<section id="engineers">
+
+    <h2 class="section-title">Available Engineers</h2>
+
+    <div class="card">
+        <h3>Stephen Mwangi</h3>
+        <p>Civil Engineering Student</p>
+        <p>Skills: AutoCAD, Surveying, Drainage Design</p>
+
+        <button onclick="location.href='hire-engineer.html'">
+            Hire
+        </button>
+    </div>
+
+</section>
+
+<section id="contractors">
+
+    <h2 class="section-title">Registered Contractors</h2>
+
+    <div class="card">
+        <h3>XYZ Construction Ltd</h3>
+        <p>Road Construction and Building Projects</p>
+
+        <button onclick="location.href='xyz-construction.html'">
+            View Profile
+        </button>
+    </div>
+
+</section>
+
+<footer id="contact">
+
+    <h3>Contact Us</h3>
+
+    <p>Email: info@civilconnect.co.ke</p>
+    <p>Phone: +254 721525326</p>
+
+</footer>
+
+</body>
+</html>
